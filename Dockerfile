@@ -14,6 +14,9 @@ RUN npm install -g npm@10.2.5 --timeout=60000
 # Copy the entire project to the container
 COPY . .
 
+# Install react-scripts as a development dependency
+RUN npm install react-scripts --save-dev
+
 # Build the React app
 RUN npm run build
 
