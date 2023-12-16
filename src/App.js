@@ -19,11 +19,11 @@ function App() {
         <Routes>
           <Route path="/page" element={<SideBar />}>
             <Route path="home" element={<Home />} />
-            <Route path="about" element={<About />} />
+            {/* <Route path="about" element={<About />} /> */}
             {/* <Route path="resume" element={<Resume />} />
             <Route path="work" element={<Work />} />
             <Route path="Services" element={<Services />} /> */}
-            <Route path="contact" element={<Contact />} />
+            {/* <Route path="contact" element={<Contact />} /> */}
           </Route>
           <Route path="*" element={<Navigate to="page/home" replace />} />
         </Routes>
